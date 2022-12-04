@@ -1,0 +1,65 @@
+.navbar_main_container{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.navbar_common_div{
+    width: 23.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navbar_common_div a{
+    color: #fff;
+}
+
+.svgburg{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 6.5px;
+}
+
+.ham{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ham-1{
+   width: 50%;
+}
+
+.ham-2{
+   width: 70%;
+}
+
+.search{
+    margin-bottom: -3px;
+}
+
+
+.menuopen .ham-2{
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menuopen .ham-1{
+    width: 100%;
+    transform: translateY(6.5px) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menuopen .ham-3{
+    transform: translateY(-10.5px) rotate(-45deg);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menuclose{
+
+}
