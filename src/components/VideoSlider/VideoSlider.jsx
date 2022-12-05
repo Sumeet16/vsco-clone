@@ -3,14 +3,7 @@ import "./VideoSlider.css"
 
 const VideoSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    setTimeout(() => {
-        if (currentIndex === 3) {
-            setCurrentIndex(0)
-        }else{
-            setCurrentIndex(currentIndex + 1)
-        }
-    }, 5000);
+    
     return (
         <>
             <div className="videoSlider_main_container">
