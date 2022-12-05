@@ -4,7 +4,7 @@ import "./VideoSlider.css"
 const VideoSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    setInterval(() => {
+    setTimeout(() => {
         if (currentIndex === 3) {
             setCurrentIndex(0)
         }else{
@@ -14,7 +14,7 @@ const VideoSlider = () => {
     return (
         <>
             <div className="videoSlider_main_container">
-                <div className="slider" style={{left: `-${currentIndex * 25.65}rem`}}>
+                <div className="slider" style={{left: `-${currentIndex * 24}rem`}}>
                     <div className="videoContainer">
                         <video autoplay="" loop muted>
                             <source src="https://assets.vsco.co/assets/videos/vsco/presets.mp4" type="video/mp4" />
