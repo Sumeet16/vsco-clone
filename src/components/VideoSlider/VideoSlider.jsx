@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import "./VideoSlider.css"
 
 const VideoSlider = () => {
-    const [currentIndex, setCurrentIndex] = useState(1);
+    const [currentIndex, setCurrentIndex] = useState(0);
     return (
         <>
             <div className="videoSlider_main_container">
-                <div className="slider" style={{left: `-${currentIndex === 1 ? "0" : currentIndex * 24}rem`}}>
+                <div className="slider" style={{left: `-${currentIndex * 25.65}rem`}}>
                     <div className="videoContainer">
                         <video autoplay="" loop muted>
                             <source src="https://assets.vsco.co/assets/videos/vsco/presets.mp4" type="video/mp4" />
@@ -42,6 +42,13 @@ const VideoSlider = () => {
                         <div className="heading">Introducing VSCO Spaces – Let's Discuss</div>
                         <p className="sub-heading-1">Get inspiration from the community in VSCO Spaces – a place where creators can have visual discussions in collective galleries and get the support they need to advance in their creative journey.</p>
                     </div>
+                </div>
+
+                <div className="slider_controller">
+                    <div className="bar" style={{background: `${currentIndex === 0 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(0)}}></div>
+                    <div className="bar" style={{background: `${currentIndex === 1 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(1)}}></div>
+                    <div className="bar" style={{background: `${currentIndex === 2 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(2)}}></div>
+                    <div className="bar" style={{background: `${currentIndex === 3 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(3)}}></div>
                 </div>
             </div>
         </>
