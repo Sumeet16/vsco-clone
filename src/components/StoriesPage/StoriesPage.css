@@ -1,0 +1,88 @@
+.storiesPage_main_container{
+    width: 100%;
+    height: fit-content;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    color: #fff;
+    margin-top: -0.1rem;
+    padding-top: 5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-bottom: 5rem;
+}
+
+.storiesPage_detail_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.big_heading{
+    font-size: 2.875rem;
+}
+
+.light_heading{
+    font-size: 1rem;
+    color: rgb(159, 159, 159);
+    margin-bottom: 1rem;
+}
+
+.btn{
+    text-decoration: none;
+    border: 1.5px solid rgb(159, 159, 159);
+    padding: 0.75rem 5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(159, 159, 159);
+}
+
+.testimonial_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.storie_card{
+    width: 100%;
+    background-color: #1b1b1b;
+}
+
+.storie_card:nth-child(1){
+    margin-bottom: -1rem;
+}
+
+.home__stories-img{
+    width: 24.4rem;
+    height: 18.28rem;
+    object-fit: cover;
+}
+
+.lower_cont{
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.home__stories-avatar{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.storie_heading{
+    font-size: 1.32rem;
+    margin-bottom: 0.5rem;
+}
+
+.storie_sub_heading{
+    font-size: 0.95rem;
+}

@@ -1,4 +1,38 @@
 .footer_main_container{
     width: 100%;
-    background-color: #111;
+    height: auto;
+    background-color: #111111;
+    margin-top: -0.1rem;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1.25rem;
+    gap: 3.1rem;
+    padding-bottom: 5rem;
+}
+
+.footer_grid_layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3.4rem;
+    grid-row-gap: 3rem;
+}
+
+.inner_cont{
+    width: 8.93rem;
+    line-height: 1;
+}
+
+.yellow_heading{
+    color: #ffc53c;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.sub_heading{
+    font-size: 0.82rem;
+    color: #fff;
 }
