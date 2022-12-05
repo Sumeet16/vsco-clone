@@ -1,0 +1,93 @@
+.banner_1_main_container{
+    width: 100%;
+    height: 230vh;
+    background-color: #111111;
+    margin-top: -0.1rem;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 0 1.5rem;
+    position: relative;
+    padding-top: 10rem;
+}
+
+.banner_1_heading{
+    font-size: 1.75rem;
+    position: absolute;
+    top: -5rem;
+    z-index: 1;
+}
+
+.banner_1_feature_tab{
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: center;
+}
+
+.banner_1_feature_tab_inner_div{
+    width: 16.5rem;
+}
+
+.sub_heading{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.light_heading{
+    font-size: 0.93rem;
+    color: rgb(159, 159, 159);
+}
+
+.home_wall{
+    position: absolute;
+    left: 0;
+}
+
+.home__wall-1-img{
+    width: 14rem;
+}
+
+.home__wall-box{
+    margin-top: 7rem;
+    position: relative;
+}
+
+.home__wall-img-reveal-wrap{
+    position: absolute;
+    width: 100%;
+}
+
+.home__wall-img-reveal-wrap img{
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+
+.demo{
+    position: absolute;
+    right: -1.8rem;
+}
+.demo_2{
+    position: absolute;
+    left: 1rem;
+}
+
+._2{
+    width: 10.25rem;
+}
+
+._3{
+    width: 13rem;
+}
+
+.home_wall_cont{
+    width: 100%;
+    position: relative;
+    margin-top: 30rem;
+}
+
+.third{
+    margin-top: 48rem;
+}

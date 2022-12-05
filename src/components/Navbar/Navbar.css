@@ -3,7 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
 }
 
 .navbar_common_div{
@@ -24,11 +28,17 @@
     gap: 6.5px;
 }
 
+.applyBg{
+    background-color: #111111;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .ham{
     width: 100%;
     height: 2px;
     background-color: white;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 3;
 }
 
 .ham-1{
@@ -60,6 +70,62 @@
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.menuclose{
+.hamburger_flap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: black;
+    text-align: left;
+    padding: 2rem;
+    color: #fff;
+    z-index: 2;
+    box-shadow: -10.5rem 0 0px rgba(0, 0, 0, 0.3);
+    transform: translateX(200%);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
+.hamburger_flap ul{
+    list-style: none;
+}
+
+.hamburger_flap .h_top {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.hamburger_flap hr{
+    height: 2px;
+}
+
+.hamburger_flap .h_top li{
+    font-size: 1.35rem;
+    font-weight: 100;
+    line-height: 2.4;
+    cursor: pointer;
+}
+
+.horizontal_view{
+    border-top: 1px solid #444;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    padding-top: 1rem;
+}
+
+.horizontal_view ul li{
+    padding-top: 2rem;
+    justify-items: start;
+    text-align: left;
+}
+
+.flap_open{
+    transform: translateX(0%);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

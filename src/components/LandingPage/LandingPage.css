@@ -1,9 +1,10 @@
 .landingPage_main_container{
     width: 100%;
-    height: 100vh;
+    height: 115vh;
     color: #fff;
     position: relative;
     font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: 0 -8rem 40px rgba(0, 0, 0, 0.3) inset;
 }
 
 .landingPage_end_div{
@@ -14,13 +15,22 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    bottom: 20%;
+    bottom: 25%;
     transform: translateX(-50%);
+}
+
+.blur_effect{
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    filter: blur(40px);
+    position: absolute;
+    bottom: -2rem;
 }
 
 .landingImg{
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     position: absolute;
     top: 0;
     left: 0;

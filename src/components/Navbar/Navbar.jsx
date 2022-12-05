@@ -1,12 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Navbar.css"
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     return (
         <>
-            <div className="navbar_main_container">
+            <div className={`${scrollPosition > "925" ? "applyBg" : ""} navbar_main_container`}>
                 <svg width="67" height="28" viewBox="0 0 67 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M46.5812 16.7782C46.1989 16.5977 45.8605 16.336 45.5895 16.0114L44.6506 16.774C45.0344 17.2338 45.5167 17.6015 46.0617 17.8499C46.6067 18.0982 47.2006 18.221 47.7994 18.209C49.3041 18.209 50.5341 17.3357 50.5341 15.9376C50.5341 14.8142 49.8945 14.2853 48.3119 13.9286L47.4919 13.7441C46.7416 13.5637 46.4669 13.4284 46.4669 12.9938C46.4669 12.5592 46.9958 12.1738 47.6969 12.1738C48.0352 12.1582 48.3727 12.2191 48.6843 12.3518C48.9959 12.4845 49.2736 12.6857 49.4968 12.9405L50.4603 12.2025C50.1264 11.8017 49.7033 11.4847 49.2248 11.2768C48.7464 11.0689 48.2259 10.9759 47.7051 11.0053C46.2004 11.0053 45.077 11.8991 45.077 13.0881C45.077 14.1336 45.6469 14.6748 47.1557 15.0069L47.8937 15.175C48.6891 15.3513 49.1606 15.4743 49.1606 16.0606C49.1606 16.6469 48.5825 17.0569 47.8035 17.0569C47.3807 17.0539 46.9636 16.9588 46.5812 16.7782Z" fill="currentColor"></path>
                     <path d="M39.4313 13.7892L38.4842 11.1201H37L39.5871 18.0901H41.0221L43.6215 11.1201H42.1865L41.2394 13.7974L41.0943 14.2164L41.0941 14.2169L41.0933 14.2192C40.769 15.1549 40.5339 15.8333 40.3333 16.446C40.0996 15.7285 39.8413 14.9413 39.4313 13.7892Z" fill="white"></path>
@@ -22,11 +36,36 @@ const Navbar = () => {
                         </svg>
                     </a>
 
-                   <div className={`${menuOpen ? 'menuopen' : 'menuclose'} svgburg`} onClick={() => {setMenuOpen(!menuOpen)}}>
+                    <div className={`${menuOpen ? 'menuopen' : ''} svgburg`} onClick={() => { setMenuOpen(!menuOpen) }}>
                         <div className="ham ham-1"></div>
                         <div className="ham ham-2"></div>
                         <div className="ham ham-3"></div>
-                   </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={`${menuOpen ? 'flap_open' : ''} hamburger_flap`}>
+                <ul className='h_top'>
+                    <li>Download VSCO</li>
+                    <li>Sign Up</li>
+                    <li>Sign In</li>
+                    <li>Stories</li>
+                    <li>Support</li>
+                    <li>Forum</li>
+                </ul>
+
+                <div className="horizontal_view">
+                    <ul>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                    </ul>
+
+                    <ul>
+                        <li>Guidlines</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                    </ul>
                 </div>
             </div>
         </>

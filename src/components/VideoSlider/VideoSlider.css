@@ -1,0 +1,47 @@
+.videoSlider_main_container{
+    width: 100%;
+    height: 150vh;
+    background-color: #111111;
+    color: #fff;
+    position: relative;
+}
+
+.slider{
+    width: 400%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: #111111;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.videoContainer{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 0 1.15rem;
+}
+
+.videoContainer img{
+    width: 1.5rem;
+}
+
+video{
+    width: 100%;
+}
+
+.heading{
+    font-size: 1.75rem;
+    margin-bottom: 1.15rem;
+    font-weight: 500;
+}
+
+.sub-heading-1{
+    font-size: 1rem;
+    color: rgb(159, 159, 159);
+}
