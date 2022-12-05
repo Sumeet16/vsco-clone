@@ -39,9 +39,10 @@
     color: rgb(159, 159, 159);
 }
 
-.home_wall{
-    position: absolute;
-    left: 0;
+.grp_div{
+    width: 100%;
+    height: 110vh;
+    position: relative;
 }
 
 .home__wall-1-img{
@@ -65,13 +66,20 @@
     width: 100%;
 }
 
-.demo{
+.second{
     position: absolute;
-    right: -1.8rem;
+    left: -1.5rem;
 }
-.demo_2{
+
+.first{
     position: absolute;
-    left: 1rem;
+    right: -1.5rem;
+    top: 23rem;
+}
+
+.third{
+    position: absolute;
+    top: 40rem;
 }
 
 ._2{
@@ -84,10 +92,7 @@
 
 .home_wall_cont{
     width: 100%;
-    position: relative;
-    margin-top: 30rem;
+    /* position: relative; */
+    /* margin-top: 20rem; */
 }
 
-.third{
-    margin-top: 48rem;
-}
