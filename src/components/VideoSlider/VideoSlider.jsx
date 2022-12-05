@@ -9,7 +9,7 @@ const VideoSlider = () => {
             <div className="videoSlider_main_container">
                 <div className="slider" style={{left: `-${currentIndex * 100}%`}}>
                     <div className="videoContainer">
-                        <video controls={false} autoPlay loop={true} muted>
+                        <video controls>
                             <source src="https://assets.vsco.co/assets/videos/vsco/presets.mp4" type="video/mp4" />
                         </video>
                         <img src="https://assets-global.website-files.com/624de812dd74b622858823f2/624ed8433ff80d530d5cdd0b_icon-photo.svg" loading="lazy" alt="VSCO Spaces" class="home__slider-icon" />
