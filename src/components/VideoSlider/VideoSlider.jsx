@@ -7,7 +7,7 @@ const VideoSlider = () => {
     return (
         <>
             <div className="videoSlider_main_container">
-                <div className="slider" style={{left: `-${currentIndex * 25}%`}}>
+                <div className="slider" style={{left: `-${currentIndex * 100}%`}}>
                     <div className="videoContainer">
                         <video autoplay="" loop muted>
                             <source src="https://assets.vsco.co/assets/videos/vsco/presets.mp4" type="video/mp4" />
