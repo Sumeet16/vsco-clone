@@ -7,9 +7,13 @@ const VideoSlider = () => {
     return (
         <>
             <div className="videoSlider_main_container">
-                <div className="slider" style={{left: `-${currentIndex * 100}%`}}>
+                <div className="slider" style={{ left: `-${currentIndex * 100}%` }}>
                     <div className="videoContainer">
-                        <video autoPlay loop muted playsInline={true}>
+                        <video autoPlay={true}
+                            loop={true}
+                            controls={false}
+                            playsInline
+                            muted >
                             <source src="https://assets.vsco.co/assets/videos/vsco/presets.mp4" type="video/mp4" />
                         </video>
                         <img src="https://assets-global.website-files.com/624de812dd74b622858823f2/624ed8433ff80d530d5cdd0b_icon-photo.svg" loading="lazy" alt="VSCO Spaces" class="home__slider-icon" />
@@ -18,7 +22,11 @@ const VideoSlider = () => {
                     </div>
 
                     <div className="videoContainer">
-                        <video autoPlay loop muted playsInline={true}>
+                        <video autoPlay={true}
+                            loop={true}
+                            controls={false}
+                            playsInline
+                            muted >
                             <source src="https://assets.vsco.co/assets/videos/vsco/tools.mp4" type="video/mp4" />
                         </video>
                         <img src="https://assets-global.website-files.com/624de812dd74b622858823f2/624ed843617889b288b106ea_icon-quality.svg" loading="lazy" alt="VSCO Spaces" class="home__slider-icon" />
@@ -27,7 +35,11 @@ const VideoSlider = () => {
                     </div>
 
                     <div className="videoContainer">
-                        <video autoPlay loop muted playsInline={true}>
+                        <video autoPlay={true}
+                            loop={true}
+                            controls={false}
+                            playsInline
+                            muted >
                             <source src="https://assets.vsco.co/assets/videos/vsco/video.mp4" type="video/mp4" />
                         </video>
                         <img src="https://assets-global.website-files.com/624de812dd74b622858823f2/624ed8437f60205b0b279756_icon-video.svg" loading="lazy" alt="VSCO Spaces" class="home__slider-icon" />
@@ -36,7 +48,11 @@ const VideoSlider = () => {
                     </div>
 
                     <div className="videoContainer">
-                        <video autoPlay loop muted playsInline={true}>
+                        <video autoPlay={true}
+                            loop={true}
+                            controls={false}
+                            playsInline
+                            muted >
                             <source src="https://assets.vsco.co/assets/videos/vsco/spaces.mp4" type="video/mp4" />
                         </video>
                         <img src="https://assets-global.website-files.com/624de812dd74b622858823f2/62a2741294a84b2d3e17a05d_slide_icon_spaces.svg" loading="lazy" alt="VSCO Spaces" class="home__slider-icon" />
@@ -46,10 +62,10 @@ const VideoSlider = () => {
                 </div>
 
                 <div className="slider_controller">
-                    <div className="bar" style={{background: `${currentIndex === 0 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(0)}}></div>
-                    <div className="bar" style={{background: `${currentIndex === 1 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(1)}}></div>
-                    <div className="bar" style={{background: `${currentIndex === 2 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(2)}}></div>
-                    <div className="bar" style={{background: `${currentIndex === 3 ? "#fff" : "rgb(145, 145, 145)"}`}} onClick={() => {setCurrentIndex(3)}}></div>
+                    <div className="bar" style={{ background: `${currentIndex === 0 ? "#fff" : "rgb(145, 145, 145)"}` }} onClick={() => { setCurrentIndex(0) }}></div>
+                    <div className="bar" style={{ background: `${currentIndex === 1 ? "#fff" : "rgb(145, 145, 145)"}` }} onClick={() => { setCurrentIndex(1) }}></div>
+                    <div className="bar" style={{ background: `${currentIndex === 2 ? "#fff" : "rgb(145, 145, 145)"}` }} onClick={() => { setCurrentIndex(2) }}></div>
+                    <div className="bar" style={{ background: `${currentIndex === 3 ? "#fff" : "rgb(145, 145, 145)"}` }} onClick={() => { setCurrentIndex(3) }}></div>
                 </div>
             </div>
         </>
