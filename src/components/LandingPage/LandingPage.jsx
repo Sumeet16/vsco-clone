@@ -8,7 +8,7 @@ const LandingPage = () => {
         <>
             <div className="landingPage_main_container">
                 <img src={bgImg} className="landingImg" />
-                <Navbar />
+                <Navbar color="#111111" />
                 <div className="landingPage_end_div">
                     <div class="home__hero-head">Here for your creative journey</div>
                     <svg className='vsco_big_logo' viewBox="0 0 58 92" fill="none" xmlns="http://www.w3.org/2000/svg">

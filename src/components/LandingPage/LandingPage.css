@@ -5,6 +5,7 @@
     position: relative;
     font-family: 'Nanum Gothic', sans-serif;
     box-shadow: 0 -8rem 40px rgba(0, 0, 0, 0.3) inset;
+    overflow: hidden;
 }
 
 .landingPage_end_div{
@@ -17,6 +18,7 @@
     left: 50%;
     bottom: 25%;
     transform: translateX(-50%);
+    overflow: hidden;
 }
 
 .blur_effect{

@@ -6,16 +6,18 @@
     color: #fff;
     font-family: 'Nanum Gothic', sans-serif;
     text-align: center;
-    padding: 0 1.5rem;
     position: relative;
     padding-top: 10rem;
     padding-bottom: 4rem;
 }
 
 .banner_1_heading{
+    width: 90%;
     font-size: 1.75rem;
     position: absolute;
     top: -5rem;
+    left: 40%;
+    transform: translateX(-40%);
     z-index: 1;
 }
 

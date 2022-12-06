@@ -3,7 +3,7 @@ import "./Banner_1.css"
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 
-const Baneer_1 = () => {
+const Baneer_1 = (props) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
