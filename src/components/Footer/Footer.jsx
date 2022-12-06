@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Footer.css"
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <div className="footer_main_container">
-        <svg width="58" height="102" viewBox="0 0 58 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg data-aos="fade-up" data-aos-anchor-placement="top-bottom" width="58" height="102" viewBox="0 0 58 92" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 78.165L4.82383 91.1875H7.5017L12.3439 78.165H9.66601L7.90522 83.1539C7.15321 85.3182 6.63965 86.7855 6.21779 88.0878C5.7776 86.7488 5.28237 85.2815 4.53037 83.1356L2.76957 78.165H0Z" fill="currentColor"></path>
           <path d="M15.3784 88.7297C17.0475 90.6189 19.0101 91.4076 21.2477 91.4076C24.0357 91.4076 26.3467 89.7752 26.3467 87.1707C26.3467 85.0798 25.1545 84.0893 22.2015 83.429L20.6425 83.0805C19.2485 82.7504 18.7349 82.4753 18.7349 81.6866C18.7349 80.8429 19.7071 80.1275 21.0093 80.1275C22.2749 80.1275 23.2103 80.4027 24.3658 81.5582L26.1633 80.1826C24.8427 78.6052 23.1736 77.9449 21.0277 77.9449C18.2214 77.9449 16.1304 79.614 16.1304 81.8333C16.1304 83.7775 17.1943 84.7863 20.0005 85.4099L21.3761 85.7217C22.8618 86.0519 23.7422 86.272 23.7422 87.3725C23.7422 88.4546 22.66 89.225 21.2111 89.225C19.8905 89.225 18.5882 88.8214 17.0842 87.2808L15.3784 88.7297Z" fill="currentColor"></path>
           <path d="M36.6775 77.9449C33.0825 77.9449 30.6798 80.7145 30.6798 84.6762C30.6798 88.638 33.0642 91.4076 36.6041 91.4076C39.5754 91.4076 41.5747 89.7018 42.1249 86.327L39.7955 85.9602C39.3187 88.2345 38.2549 89.1883 36.6225 89.1883C34.7516 89.1883 33.5044 87.5008 33.5044 84.6762C33.5044 81.87 34.6966 80.1642 36.6775 80.1642C38.1081 80.1642 39.0435 81.118 39.5021 82.6587L42.1249 82.1268C41.3362 79.4856 39.337 77.9449 36.6775 77.9449Z" fill="currentColor"></path>
@@ -14,27 +19,27 @@ const Footer = () => {
         </svg>
 
         <div className="footer_grid_layout">
-          <div className="inner_cont">
+          <div className="inner_cont" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <p className="yellow_heading">Company</p>
             <p className="sub_heading">About</p>
             <p className="sub_heading">Our Product</p>
             <p className="sub_heading">Careers</p>
           </div>
-          <div className="inner_cont">
+          <div className="inner_cont" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <p className="yellow_heading">Community</p>
             <p className="sub_heading">About</p>
             <p className="sub_heading">Our Product</p>
             <p className="sub_heading">Careers</p>
             <p className="sub_heading">Our Product</p>
           </div>
-          <div className="inner_cont">
+          <div className="inner_cont" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <p className="yellow_heading">Legal</p>
             <p className="sub_heading">About</p>
             <p className="sub_heading">Our Product</p>
             <p className="sub_heading">Careers</p>
             <p className="sub_heading">Our Product</p>
           </div>
-          <div className="inner_cont">
+          <div className="inner_cont" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <p className="yellow_heading">Contact</p>
             <p className="sub_heading">Brands</p>
             <p className="sub_heading">Press</p>
