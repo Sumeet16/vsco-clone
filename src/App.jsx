@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react'
-import Baneer_1 from './components/Banner-1/Banner_1';
-import Footer from './components/Footer/Footer';
-import LandingPage from './components/LandingPage/LandingPage';
-import StoriesPage from './components/StoriesPage/StoriesPage';
-import VideoSlider from './components/VideoSlider/VideoSlider';
+import { BrowserRouter, Routes, Link, Route } from 'react-router-dom'
+import Homepage from './pages/HomePage/Homepage'
+import Login from './pages/Login/Login'
 
 function App() {
 
   return (
     <>
-      <div className='vsco-container' style={{overflowX: "hidden"}}>
-        <LandingPage />
-        <Baneer_1/>
-        <VideoSlider/>
-        <StoriesPage/>
-        <Footer/>
+      <div className='vsco-main-container'>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Homepage />} />
+            <Route path='/user/login' element={<Login />} />
+            <Route path='*' element={<><h1>404 Page Not Found</h1></>} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   )
